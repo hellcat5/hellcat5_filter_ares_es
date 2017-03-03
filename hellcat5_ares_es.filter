@@ -590,6 +590,18 @@ Show
 	SetTextColor 181 71 254
 
 #************************
+# leagacy league
+#************************
+# Leaguestone - magenta black text
+Show
+	Class Leaguestone
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 230 0 180
+	SetBackgroundColor 230 0 180
+	PlayAlertSound 7 200
+
+#************************
 # special cases
 #************************
 # talisman
@@ -629,6 +641,17 @@ Show
 	SetBorderColor 0 255 255
 	SetBackgroundColor 0 255 255
 
+##### crafting override section #####
+# add the basetypes you want to search for to the BaseType line below
+# crafting / alching basetypes + build gear - bubblegum background black text
+Show
+	BaseType "Titanium Spirit Shield"
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 255 180 220
+	SetBackgroundColor 255 180 220
+##### end override section #####
+
 ##### build specific override section #####
 # add / remove the basetypes you want to search for to the BaseType line below
 # build specific body armour
@@ -637,6 +660,17 @@ Show
 	BaseType Chainmail Ringmail Hauberk Robe Vest Regalia Wrap Silks Silken
 	SetFontSize 45
 #	SetTextColor 0 0 0
+#	SetBorderColor 255 180 220
+#	SetBackgroundColor 255 180 220
+
+
+# build specific helmets - 4L
+Show 
+	LinkedSockets = 4
+	Class Helmets
+	BaseType Circlet Cage Coif Soldier Great Crusader Aventail Zealot Bone Crown
+	SetFontSize 45
+	SetTextColor 255 255 50
 #	SetBorderColor 255 180 220
 #	SetBackgroundColor 255 180 220
 
@@ -649,12 +683,32 @@ Show
 #	SetBorderColor 255 180 220
 #	SetBackgroundColor 255 180 220
 
+# build specific gloves - 4L
+Show
+	LinkedSockets = 4
+	Class Gloves
+	BaseType Wool Velvet Silk Embroidered Satin Samite Conjurer Arcanist Sorcerer Chain Ringmail Mesh Riveted Zealot Soldier Legion Crusader
+	SetFontSize 45
+	SetTextColor 255 255 50
+#	SetBorderColor 255 180 220
+#	SetBackgroundColor 255 180 220
+
 # build specific gloves
 Show
 	Class Gloves
 	BaseType Wool Velvet Silk Embroidered Satin Samite Conjurer Arcanist Sorcerer Chain Ringmail Mesh Riveted Zealot Soldier Legion Crusader
 	SetFontSize 45
 #	SetTextColor 0 0 0
+#	SetBorderColor 255 180 220
+#	SetBackgroundColor 255 180 220
+
+# build specific boots - 4L
+Show
+	LinkedSockets = 4
+	Class Boots
+	BaseType Shoes Slippers Scholar Conjurer Sorcerer Chain Ringmail Mesh Riveted Zealot Soldier Legion Crusader Two-Toned
+	SetFontSize 45
+	SetTextColor 255 255 50
 #	SetBorderColor 255 180 220
 #	SetBackgroundColor 255 180 220
 
@@ -683,17 +737,6 @@ Show
 #	SetTextColor 0 0 0
 #	SetBorderColor 255 180 220
 #	SetBackgroundColor 255 180 220
-##### end override section #####
-
-##### crafting override section #####
-# add the basetypes you want to search for to the BaseType line below
-# crafting / alching basetypes + build gear - bubblegum background black text
-Show
-	BaseType "Titanium Spirit Shield"
-	SetFontSize 45
-	SetTextColor 0 0 0
-	SetBorderColor 255 180 220
-	SetBackgroundColor 255 180 220
 ##### end override section #####
 
 # crafting / alching accessories basetypes - bubblegum background black text
